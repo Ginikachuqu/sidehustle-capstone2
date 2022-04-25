@@ -93,8 +93,27 @@ const Contact = () => {
             Drop a Message
           </Text>
 
-          <HStack w={"100%"} pb={10} gap={5}>
-            <FormControl w={"50%"} variant={"flushed"}>
+          <HStack
+            w={"100%"}
+            pb={10}
+            gap={5}
+            sx={{
+              "@media (max-width:992px)": {
+                w: "100%",
+                flexDirection: "column",
+                gap: 10,
+              },
+            }}
+          >
+            <FormControl
+              w={"50%"}
+              variant={"flushed"}
+              sx={{
+                "@media (max-width:1350px)": {
+                  w: "100%",
+                },
+              }}
+            >
               <FormLabel
                 htmlFor="name"
                 fontWeight={500}
@@ -106,6 +125,7 @@ const Contact = () => {
               <Input
                 id="name"
                 type="text"
+                px={2}
                 placeholder="Enter Your Name"
                 size={"md"}
                 variant={"flushed"}
@@ -113,7 +133,14 @@ const Contact = () => {
               />
             </FormControl>
 
-            <FormControl w={"50%"}>
+            <FormControl
+              w={"50%"}
+              sx={{
+                "@media (max-width:1350px)": {
+                  w: "100%",
+                },
+              }}
+            >
               <FormLabel
                 htmlFor="number"
                 fontWeight={500}
@@ -128,13 +155,33 @@ const Contact = () => {
                 placeholder="+234 ..."
                 size={"md"}
                 variant={"flushed"}
+                px={2}
                 _placeholder={{ fontSize: ".8rem" }}
               />
             </FormControl>
           </HStack>
 
-          <HStack w={"100%"} pb={10} gap={5}>
-            <FormControl w={"50%"} variant={"flushed"}>
+          <HStack
+            w={"100%"}
+            pb={10}
+            gap={5}
+            sx={{
+              "@media (max-width:992px)": {
+                w: "100%",
+                flexDirection: "column",
+                gap: 10,
+              },
+            }}
+          >
+            <FormControl
+              w={"50%"}
+              variant={"flushed"}
+              sx={{
+                "@media (max-width:1350px)": {
+                  w: "100%",
+                },
+              }}
+            >
               <FormLabel
                 htmlFor="email"
                 fontWeight={500}
@@ -153,7 +200,14 @@ const Contact = () => {
               />
             </FormControl>
 
-            <FormControl w={"50%"}>
+            <FormControl
+              w={"50%"}
+              sx={{
+                "@media (max-width:1350px)": {
+                  w: "100%",
+                },
+              }}
+            >
               <FormLabel
                 htmlFor="text"
                 fontWeight={500}
