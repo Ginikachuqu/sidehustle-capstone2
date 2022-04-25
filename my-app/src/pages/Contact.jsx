@@ -78,6 +78,7 @@ const Contact = () => {
           sx={{
             "@media (max-width:1350px)": {
               w: "100%",
+              align: "center",
             },
           }}
         >
@@ -230,6 +231,8 @@ const Contact = () => {
             "@media (max-width:1350px)": {
               w: "100%",
               borderRadius: "none",
+              justify: "center",
+              align: "center",
             },
           }}
         >
