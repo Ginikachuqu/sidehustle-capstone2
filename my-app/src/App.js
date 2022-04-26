@@ -11,10 +11,10 @@ import ErrorPage from "./pages/ErrorPage";
 
 const App = () => {
   return (
-<<<<<<< Updated upstream
     <ChakraProvider>
       <Router>
         <Routes>
+          <Navbar />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -23,17 +23,7 @@ const App = () => {
         </Routes>
       </Router>
     </ChakraProvider>
-=======
-    <Router>
-      <Routes>
-        <Navbar />
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/products" element={<Products />} />
-      </Routes>
-    </Router>
->>>>>>> Stashed changes
+    
   );
 };
 
