@@ -57,6 +57,11 @@ body {
     font-weight: bold;
 }
 
+#logo {
+    width: 20%;
+    height: auto;
+}
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
