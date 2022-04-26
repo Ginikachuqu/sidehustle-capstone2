@@ -3,8 +3,8 @@ import imageHeader from '../assets/img/food-g57a58cc4f_1920-removebg-preview.png
 
 const Home = () => {
   return (
-    <header class="header">
-            <img id="intro_img" src={imageHeader} alt="" />
+    <header className="header">
+       <div className="headerContent">    
             <h2 id="heading">
                 Are you hungry?
             </h2>
@@ -13,8 +13,10 @@ const Home = () => {
             </article>
             <div class="link">
                 <p> Order now </p>
-            </div>        
-        </header>
+            </div>
+        </div>         
+        <img id="intro_img" src={imageHeader} alt="" />
+    </header>
   )
 }
 

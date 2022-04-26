@@ -60,22 +60,23 @@ body {
 #logo {
     width: 20%;
     height: auto;
-}
+} 
 
-.nav-bar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2em;
+    margin: 1em;
 }
 
-.nav-bar .nav-links {    
+.navbar .nav-links {    
     display: flex;
 }
 
-.nav-bar .nav-links li {
-    margin: 2em;
-    list-style-type: none;        
+.navbar .nav-links li {
+    margin: 10px ;
+    list-style-type: none;
+    text-transform: uppercase;
 }
 
 .nav-bar .nav-links li a {
@@ -84,49 +85,31 @@ body {
 }
 
 #intro_img {
-    width: 100%;
+    width: 70%;
     height: auto;
 
 }
 
 .header {
-    text-align: center;    
-    width: 50%;
-    margin: 50px auto;
+   display: flex;
+   width: 100%;
+   margin: auto;
+   padding: 20px;
+
+    
 }
 #header_article {
     font-size: 16px;
-    width: 80%;
-    margin: auto;
+    
 }
 
 .link {
-    background-color: hsl(198, 60%, 50%);
+    background-color: aqua;
     border: 1px solid;
-    width: 40%;
-    border-radius: 60px;    
-    margin: 30px auto; 
     border-style: none;
-    padding: 1px;
+    border-radius: 10px;
+    text-align: center;
+       
 }
 
-.header {
-    text-align: center;    
-    width: 50%;
-    margin: 50px auto;
-}
-#header_article {
-    font-size: 16px;
-    width: 80%;
-    margin: auto;
-}
 
-.link {
-    background-color: hsl(198, 60%, 50%);
-    border: 1px solid;
-    width: 40%;
-    border-radius: 60px;    
-    margin: 30px auto; 
-    border-style: none;
-    padding: 1px;
-}
