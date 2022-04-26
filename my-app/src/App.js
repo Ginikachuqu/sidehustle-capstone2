@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./assets/css/index.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import ErrorPage from "./pages/ErrorPage";
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />          
           <Route path="*" element={<ErrorPage />} />
         </Routes>
+      <Footer />
       </Router>
     </ChakraProvider>
     
