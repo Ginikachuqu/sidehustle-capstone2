@@ -27,6 +27,7 @@ const Contact = () => {
       <VStack
         w={"100%"}
         h={"50vh"}
+        position="relative"
         align="center"
         justify="center"
         sx={{
@@ -48,12 +49,30 @@ const Contact = () => {
         }}
       />
 
+      <VStack
+        w={"100%"}
+        h={"50vh"}
+        position="relative"
+        align="center"
+        justify="center"
+        _after={{
+          content: "''",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundColor: "white",
+          opacity: 0.38,
+        }}
+      />
+
       {/* Position Absolute */}
 
       <Box
         width="70%"
         position="absolute"
-        top={"320px"}
+        top={"280px"}
         left={"300px"}
         backgroundColor="white"
         display="flex"
