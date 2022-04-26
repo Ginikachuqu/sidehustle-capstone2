@@ -163,14 +163,14 @@ body {
 
 /* Footer */
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     background: #111;
     height: auto;
     width: 100vw;
-    padding-top: 10px;
+    padding: 5px 0px 0px 0px;
     color: #fff;
 }
 
@@ -184,7 +184,7 @@ footer {
 
 .footer-content p {
     max-width: 600px;
-    margin: 10px auto;
+    margin: 5px auto;
     line-height: 28px;
     font-size: 14px;
     color: #cacdd2;   
@@ -193,7 +193,7 @@ footer {
 .footer-bottom p {
     text-align: center;
     max-width: 500px;
-    margin: 10px auto;
+    margin: 5px auto;
     line-height: 28px;
     font-size: 14px;
     color: #cacdd2;
