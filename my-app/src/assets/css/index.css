@@ -1,6 +1,59 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap');
+
+*, *::after, *::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f4f4f4;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu__container {
+    width: 100%;
+    height: 100%;
+}
+
+.menu__container .container {
+    height: 90vh;
+    width: 80%;
+    margin: 1.5em auto 0;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 120px);
+    /* grid-template-columns: repeat(auto-fill, minmax(20px, 1fr)); */
+}
+
+.container .meal__info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.meal__info .meal__image {
+    height: 70px;
+    width: 70px;
+    border-radius: 1em;
+    padding: .85em;
+    background-color: #fff;
+    object-fit: cover;
+    margin-right: 1em;
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, .25);
+}
+
+.meal__image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.meal__desc .meal__desc-name {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 
