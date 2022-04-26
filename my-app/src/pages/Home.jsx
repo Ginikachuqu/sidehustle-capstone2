@@ -1,18 +1,18 @@
 import React from 'react'
+import imageHeader from '../assets/img/food-g57a58cc4f_1920-removebg-preview.png'
 
 const Home = () => {
   return (
     <header class="header">
-            <img id="intro_img" src="Images/illustration-intro.png" alt="Intro-image" />
+            <img id="intro_img" src={imageHeader} alt="" />
             <h2 id="heading">
-                All your files in one secure location, accessible anywhere.
+                Are you hungry?
             </h2>
             <article id="header_article">
-                Fylo stores all your most important files in one secure location. Access them wherever
-                you need, share and collaborate with friends and family, and co-workers.
+                Don't wait.
             </article>
             <div class="link">
-                <p> Get Started </p>
+                <p> Order now </p>
             </div>        
         </header>
   )
