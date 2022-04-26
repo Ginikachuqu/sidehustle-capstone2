@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import "./assets/css/index.css";
 import { ChakraProvider } from "@chakra-ui/react";
+import ErrorPage from "./pages/ErrorPage";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
     </ChakraProvider>
