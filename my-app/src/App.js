@@ -4,21 +4,28 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./assets/css/index.css";
 import { ChakraProvider } from "@chakra-ui/react";
+import ErrorPage from "./pages/ErrorPage";
 
 const App = () => {
   return (
     <ChakraProvider>
       <Router>
-        <Routes>
+      <Navbar />
+        <Routes>          
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />          
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
+      <Footer />
       </Router>
     </ChakraProvider>
+    
   );
 };
 
