@@ -36,6 +36,12 @@ const Contact = () => {
           backgroundSize: "cover",
           backgroundPosition: "50% 50%",
           position: "relative",
+          "@media (max-width:1350px)": {
+            h: "50vh",
+          },
+          "@media (min-width:1351px ) and (max-width:1900px)": {
+            height: "45vh",
+          },
         }}
         _after={{
           content: "''",
@@ -51,8 +57,7 @@ const Contact = () => {
 
       <VStack
         w={"100%"}
-        h={"50vh"}
-        position="relative"
+        height={"50vh"}
         align="center"
         justify="center"
         _after={{
@@ -65,15 +70,26 @@ const Contact = () => {
           backgroundColor: "white",
           opacity: 0.38,
         }}
-      />
+        sx={{
+          "@media (max-width:1350px)": {
+            h: "0vh",
+          },
+          "@media (min-width:1351px ) and (max-width:1900px)": {
+            height: "55vh",
+          },
+          "@media (min-width:1901px) ": {
+            height: "50vh",
+          },
+        }}
+      ></VStack>
 
       {/* Position Absolute */}
 
       <Box
         width="70%"
         position="absolute"
-        top={"280px"}
-        left={"300px"}
+        top={"290px"}
+        left={"250px"}
         backgroundColor="white"
         display="flex"
         boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px"
@@ -86,6 +102,14 @@ const Contact = () => {
             width: "100%",
             flexDirection: "column",
             gap: 4,
+          },
+          "@media (min-width:1351px) and (max-width:1900px)": {
+            top: "250px",
+            left: "200px",
+          },
+          "@media (min-width:1901px) ": {
+            top: "250px",
+            left: "250px",
           },
         }}
       >

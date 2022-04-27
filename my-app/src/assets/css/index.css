@@ -284,12 +284,13 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 12vh;
-    background-color: #f4f4f4;
-    color: #090909;
+    min-height: 9vh;
+    background-color: #222C23;
+    color: #fff;
     justify-content:space-between;
     padding-bottom: 20px;
 }
+
 
 .footer-content {
     display: flex;
