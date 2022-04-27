@@ -40,7 +40,7 @@ const Contact = () => {
             h: "50vh",
           },
           "@media (min-width:1351px ) and (max-width:1900px)": {
-            height: "45vh",
+            height: "40vh",
           },
         }}
         _after={{
@@ -51,49 +51,17 @@ const Contact = () => {
           width: "100%",
           height: "100%",
           backgroundColor: "white",
-          opacity: 0.18,
+          opacity: 0.28,
         }}
       />
 
-      <VStack
-        w={"100%"}
-        height={"50vh"}
-        align="center"
-        justify="center"
-        _after={{
-          content: "''",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          backgroundColor: "white",
-          opacity: 0.38,
-        }}
-        sx={{
-          "@media (max-width:1350px)": {
-            h: "0vh",
-          },
-          "@media (min-width:1351px ) and (max-width:1900px)": {
-            height: "55vh",
-          },
-          "@media (min-width:1901px) ": {
-            height: "50vh",
-          },
-        }}
-      ></VStack>
-
-      {/* Position Absolute */}
-
       <Box
-        width="70%"
-        position="absolute"
-        top={"290px"}
-        left={"250px"}
+        width="100%"
+        mh={"50vh"}
+        position="relative"
         backgroundColor="white"
         display="flex"
         boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px"
-        borderRadius=".35rem"
         sx={{
           "@media (max-width:1350px)": {
             position: "relative",
@@ -102,15 +70,12 @@ const Contact = () => {
             width: "100%",
             flexDirection: "column",
             gap: 4,
+            mh: "40vh",
           },
           "@media (min-width:1351px) and (max-width:1900px)": {
-            top: "250px",
-            left: "200px",
+            minHeight: "60vh",
           },
-          "@media (min-width:1901px) ": {
-            top: "250px",
-            left: "250px",
-          },
+          "@media (min-width:1901px) ": {},
         }}
       >
         <VStack
@@ -122,6 +87,10 @@ const Contact = () => {
             "@media (max-width:1350px)": {
               w: "100%",
               align: "center",
+            },
+
+            "@media (min-width:1351px) and (max-width:1900px)": {
+              justifyContent: "center",
             },
           }}
         >
@@ -321,15 +290,18 @@ const Contact = () => {
           p={10}
           bgImage={"linear-gradient(to right, #0FA671, #30A03C)"}
           w={"40%"}
-          borderRadius=".35rem"
+          borderRadius="none"
           borderTopLeftRadius={"none"}
           borderBottomLeftRadius={"none"}
           sx={{
             "@media (max-width:1350px)": {
               w: "100%",
               borderRadius: "none",
-              justify: "center",
-              align: "center",
+              justifyContent: "center",
+              alignItems: "center",
+            },
+            "@media (min-width:1351px) and (max-width:1900px)": {
+              justifyContent: "center",
             },
           }}
         >
@@ -421,7 +393,7 @@ const Contact = () => {
             </Text>
           </Flex>
 
-          <HStack w={"100%"} gap={5} pt={10}>
+          <HStack gap={5} pt={10}>
             <Center p={1} bgColor={"white"}>
               <FaFacebookF size={"15px"} />
             </Center>
