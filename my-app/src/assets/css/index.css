@@ -15,15 +15,22 @@ body {
 
 /* Products */
 .menu__container {
+    height: 90vh;
     width: 100%;
     height: 100%;
+    padding: 2em;
+}
+
+.menu__container > h1 {
+    font-weight: bold;
+    font-size: 1.35rem;
+    text-align: center;
 }
 
 .menu__container .container {
-    height: 90vh;
+    height: 100%;
     width: 80%;
     margin: 1.5em auto 0;
-    padding: 2em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 120px);
@@ -58,146 +65,43 @@ body {
     font-weight: bold;
 }
 
-/* NavBar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height:8vh;
-    background-color:#222C23;
-    color: #fff;
+
+
+/* Media Queries */
+@media screen and (max-width: 500px){
+    .menu__container .container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 100px);
+        column-gap: 1em;
+    }
+
+    .meal__desc .meal__desc-name {
+        font-size: .95rem;
+        line-height: .95;
+    }
+
+    .meal__desc .meal__desc-price {
+        font-size: .85rem;
+    }
 }
 
+@media screen and (max-width: 700px){
+    .menu__container .container {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 100px);
+        column-gap: 1em;
+    }
 
-.logo {
-    width: 5%;
-    margin-top: 10px;
-    cursor: pointer;
-    /* height: auto; */
-} 
+    .meal__desc .meal__desc-name {
+        font-size: .95rem;
+        line-height: .95;
+    }
 
-
-
-.navbar .nav-links {    
-    display: flex;
-    margin-right: 40px;
-}
-
-.navbar .nav-links li {
-    margin: 10px ;
-    list-style-type: none;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.navbar .nav-links li:hover {
-    color: yellowgreen;
-}
-
-
-
-.nav-bar .nav-links li a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-.home{
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../img/food1.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff;
-    position: relative;
-}
-
-.home::after{
-    content: "''";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(207, 197, 197, .4);
-}
-
-
-
-.home h1{
-    font-size:100px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    z-index: 1000;
-    font-weight: 600;
-}
-
-
-.home p{
-    font-size:30px;
-    padding-left: 40px;
-    padding-bottom: 40px;
-    z-index: 20;
-    font-weight: 500;
-}
-
-.home button{
-    margin-left: 40px;
-    background-image:linear-gradient(to right, #0D7BC8, #03B8E8);
-    color: #fff;
-    padding: 10px 50px;
-    border-radius:3rem;
-    z-index: 20;
-}
-
-
-.home button:hover {
-    background-image:linear-gradient(to right, #0D7BC8, #03B8E8);
-    transform: scale(.97);
-}
-
-/* Footer */
-.footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-height: 12vh;
-    background-color: #222C23;
-    color: #fff;
-    justify-content:space-between;
-    padding-bottom: 20px;
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-content p {
-    max-width: 600px;
-    margin: 5px auto;
-    line-height: 28px;
-    font-size: 17px;
-    color: #cacdd2;   
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.footer-bottom p {
-    text-align: center;
-    max-width: 500px;
-    margin: 5px auto;
-    line-height: 28px;
-    font-size: 16px;
-    color: #cacdd2;
+    .meal__desc .meal__desc-price {
+        font-size: .85rem;
+    }
 }
 
 /* About page*/

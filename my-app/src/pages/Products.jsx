@@ -15,6 +15,7 @@ import image12 from '../assets/img/salmon-2997240_1920.jpg'
 const Products = () => {
   return (
     <section className="menu__container">
+      <h1>Available Meals</h1>
       <div className="container">
         <div className="meal__info">
           <div className="meal__image">
@@ -87,7 +88,7 @@ const Products = () => {
           </div>
           <div className="meal__desc">
             <p className="meal__desc-name">
-              Cappuccino Coffee
+              Cappuccino
             </p>
             <span className="meal__desc-price">
               Price: $5.65
@@ -126,7 +127,7 @@ const Products = () => {
           </div>
           <div className="meal__desc">
             <p className="meal__desc-name">
-              Chicken Breast Fillet
+              Chicken Fillet
             </p>
             <span className="meal__desc-price">
               Price: $85.65

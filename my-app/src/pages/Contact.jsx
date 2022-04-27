@@ -13,7 +13,7 @@ import {
   Textarea,
   VStack,
 } from "@chakra-ui/react";
-import PhoneCall from "../assets/img/food1.avif";
+import PhoneCall from "../assets/img/restaurant.avif";
 import { GoLocation } from "react-icons/go";
 import { BsTelephone, BsGlobe, BsTwitter } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
