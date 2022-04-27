@@ -240,7 +240,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 12vh;
+    min-height: 9vh;
     background-color: #222C23;
     color: #fff;
     justify-content:space-between;
