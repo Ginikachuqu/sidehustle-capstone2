@@ -51,7 +51,7 @@ const Contact = () => {
 
       <VStack
         w={"100%"}
-        h={"70vh"}
+        mh={"70vh"}
         align="center"
         justify="center"
         _after={{
@@ -64,7 +64,7 @@ const Contact = () => {
           backgroundColor: "white",
           opacity: 0.38,
         }}
-      />
+      ></VStack>
 
       {/* Position Absolute */}
 
