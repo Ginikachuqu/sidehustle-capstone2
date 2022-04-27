@@ -101,7 +101,7 @@ body {
     color: inherit;
 }
 
-
+/* Home Page */
 .home{
     width: 100%;
     height: 95vh;
@@ -153,6 +153,7 @@ body {
     padding: 10px 50px;
     border-radius:3rem;
     z-index: 20;
+    font-weight: bold;
 }
 
 
