@@ -199,3 +199,33 @@ body {
     font-size: 16px;
     color: #cacdd2;
 }
+
+/* About page*/
+
+.container {
+    padding: 5px;
+}
+
+.container div {
+    border: 0px solid black;
+
+}
+
+.first {
+    display: flex;
+    float: left;
+}
+
+.img {
+    width: 400px;
+    height: 200px;
+}
+
+.img2 {
+    width: 400px;
+    height: 200px;
+}
+
+
+
+
