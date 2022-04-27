@@ -51,8 +51,7 @@ const Contact = () => {
 
       <VStack
         w={"100%"}
-        h={"50vh"}
-        position="relative"
+        h={"70vh"}
         align="center"
         justify="center"
         _after={{
