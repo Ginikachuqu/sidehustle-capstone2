@@ -286,8 +286,8 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 9vh;
-    background-color: #222C23;
-    color: #fff;
+    background-color: #f4f4f4;
+    color: #090909;
     justify-content:center;
     padding-bottom: 10px;
 }
@@ -306,7 +306,7 @@ body {
     margin: 5px auto;
     line-height: 28px;
     font-size: 17px;
-    color: white;  
+    color: #090909;  
     padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -317,6 +317,6 @@ body {
     margin: 5px auto;
     line-height: 28px;
     font-size: 16px;
-    color: #cacdd2;
+    color: #090909;
 }
 
