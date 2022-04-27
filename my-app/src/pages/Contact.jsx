@@ -75,10 +75,10 @@ const Contact = () => {
             h: "0vh",
           },
           "@media (min-width:1351px ) and (max-width:1900px)": {
-            height: "45vh",
+            height: "55vh",
           },
           "@media (min-width:1901px) ": {
-            height: "40vh",
+            height: "50vh",
           },
         }}
       ></VStack>
@@ -104,11 +104,12 @@ const Contact = () => {
             gap: 4,
           },
           "@media (min-width:1351px) and (max-width:1900px)": {
-            top: "450px",
+            top: "250px",
+            left: "200px",
           },
           "@media (min-width:1901px) ": {
-            top: "450px",
-            left: "300px",
+            top: "250px",
+            left: "250px",
           },
         }}
       >
