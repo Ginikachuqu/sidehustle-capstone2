@@ -51,7 +51,7 @@ const Contact = () => {
           width: "100%",
           height: "100%",
           backgroundColor: "white",
-          opacity: 0.38,
+          opacity: 0.18,
         }}
       />
 
