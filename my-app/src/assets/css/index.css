@@ -130,7 +130,48 @@ body {
     height: 200px;
 }
 
+/* NavBar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:8vh;
+    background-color:#222C23;
+    color: #fff;
+}
 
+
+.logo {
+    width: 5%;
+    margin-top: 10px;
+    cursor: pointer;
+    /* height: auto; */
+} 
+
+
+
+.navbar .nav-links {    
+    display: flex;
+    margin-right: 40px;
+}
+
+.navbar .nav-links li {
+    margin: 10px ;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar .nav-links li:hover {
+    color: yellowgreen;
+}
+
+
+
+.nav-bar .nav-links li a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 /* Home Page */
