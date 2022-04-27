@@ -61,7 +61,6 @@ const Contact = () => {
         position="relative"
         backgroundColor="white"
         display="flex"
-        boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px"
         sx={{
           "@media (max-width:1350px)": {
             position: "relative",
