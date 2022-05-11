@@ -24,7 +24,7 @@ const sidebarLinks = [
   {
     path: '/team',
     icon: <RiTeamLine size={'30px'} />,
-    title: 'Team Members',
+    title: 'Team',
   },
 ];
 
