@@ -10,13 +10,15 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { FiLogOut } from 'react-icons/fi';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import ProfilePic from '../../assets/media/imgs/profile.avif';
 import sidebarLinks from '../../store/sideBarLinks';
+import swal from 'sweetalert';
 
 const SideBar = () => {
   //   Hooks
   const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   //   Renders
   const renderLinks = sidebarLinks.map(({ path, icon, title }, index) => {
@@ -41,6 +43,33 @@ const SideBar = () => {
       </LinkBox>
     );
   });
+
+  // Functions
+  const handleLogout = () => {
+    swal({
+      title: 'Leaving so soon?',
+      text: 'Visit soon',
+      icon: 'warning',
+      buttons: true,
+    }).then((action) => {
+      if (action) {
+        swal('Bye!', {
+          icon: 'success',
+          timer: 2000,
+          buttons: false,
+        });
+        setTimeout(() => {
+          navigate('/');
+        }, 2500);
+      } else {
+        swal('You stayed!', {
+          icon: 'success',
+          buttons: false,
+          timer: 2000,
+        });
+      }
+    });
+  };
 
   return (
     <VStack minH={'100vh'} w={'20%'}>
@@ -88,14 +117,14 @@ const SideBar = () => {
           rounded={'sm'}
           pb={2}
         >
-          <Link to={'/'}>
+          <Box onClick={handleLogout} cursor={'pointer'}>
             <Flex align="center" color={'#AEAEAE'} gap={10}>
               <FiLogOut size="25px" />
               <Text fontSize={'lg'} fontWeight={900}>
                 Log Out
               </Text>
             </Flex>
-          </Link>
+          </Box>
         </LinkBox>
       </Box>
     </VStack>

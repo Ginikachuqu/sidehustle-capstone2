@@ -24,8 +24,8 @@ const RightSideBar = () => {
   const navigate = useNavigate();
 
   // Functions
-  const handleNavigate = () => {
-    navigate('/team');
+  const handleNavigate = (e) => {
+    e.target.id === 'button' ? navigate('/customers') : navigate('/team');
   };
 
   return (
@@ -147,6 +147,7 @@ const RightSideBar = () => {
             _active={{
               transform: 'scale(.97)',
             }}
+            id={'add'}
             onClick={handleNavigate}
           >
             <IoIosAdd color={'#EAEAEA'} size={'sm'} />
@@ -193,6 +194,8 @@ const RightSideBar = () => {
             bgColor: 'white',
             transform: 'scale(.97)',
           }}
+          onClick={handleNavigate}
+          id={'button'}
         >
           Chat Now
         </Button>
