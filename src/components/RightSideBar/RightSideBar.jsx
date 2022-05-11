@@ -1,7 +1,8 @@
 import React from 'react';
 import {
-  Box,
+  Avatar,
   Center,
+  Circle,
   Flex,
   Heading,
   Spacer,
@@ -10,10 +11,11 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { BsThreeDotsVertical } from 'react-icons/bs';
+import { GrAdd } from 'react-icons/gr';
 
 const RightSideBar = () => {
   return (
-    <Stack width={'50%'} border={'1px solid black'} gap={5}>
+    <Stack width={'50%'} border={'1px solid black'} gap={5} minH={'100vh'}>
       <Heading fontSize={'3xl'} fontWeight={'700'} lineHeight={'40px'}>
         Card
       </Heading>
@@ -77,9 +79,23 @@ const RightSideBar = () => {
         </Flex>
       </VStack>
 
-      <VStack width={'100%'} border={'1px solid black'}>
-        <Flex flexDirection={'column'}>
-          <Text>Current balance</Text>
+      <Flex
+        width={'100%'}
+        border={'1px solid #E5E5E5'}
+        align={'flex-start'}
+        justify={'flex-start'}
+        p={5}
+        borderRadius={'3xl'}
+      >
+        <VStack align={'flex-start'} justify={'flex-start'}>
+          <Text
+            color={'#636363'}
+            fontSize={'16px'}
+            fontWeight={'normal'}
+            lineHeight={'29px'}
+          >
+            Current balance
+          </Text>
           <Heading
             fontSize={'3xl'}
             fontWeight={'700'}
@@ -88,6 +104,26 @@ const RightSideBar = () => {
           >
             $259,999
           </Heading>
+        </VStack>
+
+        <Spacer />
+
+        <Center bgColor={'#F9F9F9'} p={2} borderRadius={'md'}>
+          <BsThreeDotsVertical color={'#8C8C8C'} cursor={'pointer'} />
+        </Center>
+      </Flex>
+
+      <VStack>
+        <Heading>Some Team members</Heading>
+
+        <Flex>
+          <Avatar />
+          <Avatar />
+          <Avatar />
+          <Avatar />
+          <Circle>
+            <GrAdd />
+          </Circle>
         </Flex>
       </VStack>
     </Stack>
