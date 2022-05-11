@@ -1,0 +1,12 @@
+/* You can create your own css page and import it only on the page you are handling */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap');
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
