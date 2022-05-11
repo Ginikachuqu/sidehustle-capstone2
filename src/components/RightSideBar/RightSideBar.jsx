@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Avatar,
+  Button,
   Center,
   Circle,
   Flex,
@@ -11,24 +12,37 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { BsThreeDotsVertical } from 'react-icons/bs';
-import { GrAdd } from 'react-icons/gr';
+import { IoIosAdd } from 'react-icons/io';
+import LadyonOrange from '../../assets/media/imgs/ladyonorange.avif';
+import LadyOnBlack from '../../assets/media/imgs/ladyonblack.avif';
+import ManOnBlue from '../../assets/media/imgs/manonblue.avif';
+import SittingMan from '../../assets/media/imgs/sitingman.avif';
+import { useNavigate } from 'react-router-dom';
 
 const RightSideBar = () => {
+  // Hooks
+  const navigate = useNavigate();
+
+  // Functions
+  const handleNavigate = () => {
+    navigate('/team');
+  };
+
   return (
-    <Stack width={'50%'} border={'1px solid black'} gap={5} minH={'100vh'}>
+    <Stack width={'40%'} gap={8} minH={'100vh'}>
       <Heading fontSize={'3xl'} fontWeight={'700'} lineHeight={'40px'}>
         Card
       </Heading>
 
       <VStack
         width={'100%'}
-        border={'1px solid black'}
         align={'flex-start'}
         px={5}
         py={4}
         bgGradient="linear(to-tr, #000000, #141414)"
         borderRadius={'2xl'}
         fontFamily={"'Roboto', sans - serif"}
+        boxShadow={'sm'}
       >
         <Flex w={'100%'} align={'flex-start'}>
           <Text
@@ -69,7 +83,7 @@ const RightSideBar = () => {
         <Flex w={'100%'} color={'#D7D7D7'}>
           <Stack>
             <Text color={'#9C9C9C'}>Card name :</Text>
-            <Text>Chigbo Ifeanyi</Text>
+            <Text>FireFly</Text>
           </Stack>
           <Spacer />
           <Stack>
@@ -86,6 +100,7 @@ const RightSideBar = () => {
         justify={'flex-start'}
         p={5}
         borderRadius={'3xl'}
+        boxShadow={'sm'}
       >
         <VStack align={'flex-start'} justify={'flex-start'}>
           <Text
@@ -113,18 +128,74 @@ const RightSideBar = () => {
         </Center>
       </Flex>
 
-      <VStack>
-        <Heading>Some Team members</Heading>
+      <VStack align={'flex-start'} justify="center" gap={4}>
+        <Heading fontSize={'25px'} fontWeight={'600'} lineHeight={'40px'}>
+          Some Team members
+        </Heading>
 
-        <Flex>
-          <Avatar />
-          <Avatar />
-          <Avatar />
-          <Avatar />
-          <Circle>
-            <GrAdd />
+        <Flex w={'100%'} gap={8} align={'center'} userSelect={'none'}>
+          <Avatar src={LadyonOrange} size={'md'} />
+          <Avatar src={ManOnBlue} size={'md'} />
+          <Avatar src={LadyOnBlack} size={'md'} />
+          <Avatar src={SittingMan} size={'md'} />
+          <Circle
+            border={'1px solid black'}
+            w={'50px'}
+            minH={'50px'}
+            bgColor={'#000000'}
+            cursor={'pointer'}
+            _active={{
+              transform: 'scale(.97)',
+            }}
+            onClick={handleNavigate}
+          >
+            <IoIosAdd color={'#EAEAEA'} size={'sm'} />
           </Circle>
         </Flex>
+      </VStack>
+
+      <VStack
+        align={'flex-start'}
+        w={'100%'}
+        bgGradient={'linear(to-r, #F6B06F, #F9C596)'}
+        p={5}
+        gap={5}
+        borderRadius={'lg'}
+      >
+        <Heading
+          fontSize={'xl'}
+          fontWeight={'700'}
+          lineHeight={'3    0px'}
+          color={'white'}
+        >
+          Have a chat with your investors
+        </Heading>
+
+        <Text
+          color={'gray.200'}
+          fontSize={'16px'}
+          fontWeight={'normal'}
+          lineHeight={'29px'}
+        >
+          Talk with your customer
+        </Text>
+
+        <Button
+          bgColor={'white'}
+          p={'10px 25px 10px 25px'}
+          _hover={{
+            bgColor: 'white',
+          }}
+          _focus={{
+            border: 'none',
+          }}
+          _active={{
+            bgColor: 'white',
+            transform: 'scale(.97)',
+          }}
+        >
+          Chat Now
+        </Button>
       </VStack>
     </Stack>
   );

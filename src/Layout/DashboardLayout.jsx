@@ -15,12 +15,12 @@ const DashboardLayout = ({ children }) => {
         display={'flex'}
         px={'20px'}
         pt={9}
-        gap={20}
+        gap={10}
         flexDirection={'column'}
       >
         <TopBar />
 
-        <HStack align="center" justify="flex-start" border={'2px solid black'}>
+        <HStack align="center" justify="flex-start" gap={3}>
           {children}
           <RightSideBar />
         </HStack>
