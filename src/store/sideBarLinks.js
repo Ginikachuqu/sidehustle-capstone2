@@ -22,7 +22,7 @@ const sidebarLinks = [
     title: 'Customers',
   },
   {
-    path: '/teammembers',
+    path: '/team',
     icon: <RiTeamLine size={'30px'} />,
     title: 'Team Members',
   },

@@ -1,7 +1,5 @@
 /* You can create your own css page and import it only on the page you are handling */
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Roboto:wght@400;500;700;900&display=swap');
 *,
 *::after,
 *::before {

@@ -1,7 +1,8 @@
 import React from 'react';
+import DashboardLayout from '../Layout/DashboardLayout';
 
 const TeamMembers = () => {
-  return <div>TeamMembers</div>;
+  return <DashboardLayout></DashboardLayout>;
 };
 
 export default TeamMembers;

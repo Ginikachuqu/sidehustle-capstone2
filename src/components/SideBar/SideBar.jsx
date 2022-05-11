@@ -9,7 +9,6 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react';
-
 import { FiLogOut } from 'react-icons/fi';
 import { Link, useLocation } from 'react-router-dom';
 import ProfilePic from '../../assets/media/imgs/profile.avif';
@@ -25,7 +24,7 @@ const SideBar = () => {
       <LinkBox
         key={`${path}-${index}`}
         w={'100%'}
-        _hover={{ color: 'gray.500' }}
+        _hover={{ color: 'gray.50' }}
         borderLeft={pathname === path ? '3px solid white' : 'none'}
         px={8}
         rounded={'sm'}
@@ -34,7 +33,7 @@ const SideBar = () => {
         <Link to={path}>
           <Flex align="center" gap={10}>
             {icon}
-            <Text fontSize={'lg'} fontWeight={'semibold'}>
+            <Text fontSize={'md'} fontWeight={900}>
               {title}
             </Text>
           </Flex>
@@ -44,12 +43,13 @@ const SideBar = () => {
   });
 
   return (
-    <VStack minH={'100vh'} w={'20%'} bgColor={'#000000'}>
+    <VStack minH={'100vh'} w={'20%'}>
       <Box
         minH={'100vh'}
         display={{ base: 'none', md: 'flex' }}
         w={'100%'}
         flexDirection="column"
+        bgColor={'#000000'}
         p={5}
         pl={0}
         pr={0}
@@ -70,7 +70,7 @@ const SideBar = () => {
             name={'James'}
             loading={'lazy'}
           />
-          <Text fontSize={'lg'} fontWeight={'bold'}>
+          <Text fontSize={'lg'} fontWeight={900}>
             James
           </Text>
         </Flex>
@@ -91,7 +91,7 @@ const SideBar = () => {
           <Link to={'/'}>
             <Flex align="center" color={'#AEAEAE'} gap={10}>
               <FiLogOut size="25px" />
-              <Text fontSize={'lg'} fontWeight={'semibold'}>
+              <Text fontSize={'lg'} fontWeight={900}>
                 Log Out
               </Text>
             </Flex>
