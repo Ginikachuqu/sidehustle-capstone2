@@ -29,7 +29,12 @@ const RightSideBar = () => {
   };
 
   return (
-    <Stack width={'40%'} gap={8} minH={'100vh'}>
+    <Stack
+      width={'40%'}
+      gap={8}
+      minH={'100vh'}
+      display={['none', 'none', 'none', 'none', 'flex']}
+    >
       <Heading fontSize={'3xl'} fontWeight={'700'} lineHeight={'40px'}>
         Card
       </Heading>

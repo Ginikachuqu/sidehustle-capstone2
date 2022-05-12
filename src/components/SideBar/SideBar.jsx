@@ -72,10 +72,10 @@ const SideBar = () => {
   };
 
   return (
-    <VStack minH={'100vh'} w={'20%'}>
+    <VStack minH={'100vh'} w={'100%'}>
       <Box
         minH={'100vh'}
-        display={{ base: 'none', md: 'flex' }}
+        display={['none', 'none', 'none', 'none', 'flex']}
         w={'100%'}
         flexDirection="column"
         bgColor={'#000000'}

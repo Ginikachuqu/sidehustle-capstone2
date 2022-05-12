@@ -7,11 +7,17 @@ import RightSideBar from '../components/RightSideBar/RightSideBar';
 const DashboardLayout = ({ children }) => {
   return (
     <Box maxW={'100%'} minH={'100vh'} display="flex">
-      <SideBar />
       <Box
-        w={'80%'}
+        display={['none', 'none', 'none', 'none', 'flex']}
+        flexDirection={'column'}
+        w={'20%'}
+      >
+        <SideBar />
+      </Box>
+      <Box
+        w={['100%', '100%', '100%', '100%', '80%']}
         minH={'100vh'}
-        // border={'3px solid red'}
+        border={'3px solid red'}
         display={'flex'}
         px={'20px'}
         pt={9}
