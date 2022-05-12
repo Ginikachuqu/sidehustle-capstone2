@@ -26,7 +26,13 @@ const DashboardLayout = ({ children }) => {
       >
         <TopBar />
 
-        <HStack align="center" justify="flex-start" gap={3}>
+        <HStack
+          align="flex-start"
+          justify="flex-start"
+          gap={3}
+          border={'1px solid black'}
+          maxW={'100%'}
+        >
           {children}
           <RightSideBar />
         </HStack>

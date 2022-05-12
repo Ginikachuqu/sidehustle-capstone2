@@ -12,6 +12,7 @@ import { useLocation } from 'react-router-dom';
 import { BsSearch } from 'react-icons/bs';
 import ProfilePic from '../../assets/media/imgs/profilepic.avif';
 import { IoMdNotificationsOutline } from 'react-icons/io';
+import { BiMenu } from 'react-icons/bi';
 
 const TopBar = () => {
   const { pathname } = useLocation();
