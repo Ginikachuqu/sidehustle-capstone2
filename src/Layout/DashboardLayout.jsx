@@ -17,7 +17,6 @@ const DashboardLayout = ({ children }) => {
       <Box
         w={['100%', '100%', '100%', '100%', '80%']}
         minH={'100vh'}
-        border={'3px solid red'}
         display={'flex'}
         px={'20px'}
         pt={9}
