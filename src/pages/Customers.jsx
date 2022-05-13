@@ -4,9 +4,6 @@ import DashboardLayout from '../Layout/DashboardLayout';
 import '../assets/css/customer.css';
 
 const Customers = () => {
-<<<<<<< Updated upstream
-  return;
-=======
   const [customers, setCustomers] = useState([])
 
   const url = 'https://fakerapi.it/api/v1/companies?_quantity=10';
@@ -19,7 +16,7 @@ const Customers = () => {
   
 
 
-  return <DashboardLayout>
+  return 
     <div className='customers-details'>
       <div className='customers-table'>
               <div className='customers-table-main'>
@@ -54,9 +51,7 @@ const Customers = () => {
           </table>
         </div>
       </div>
-    </div>
-  </DashboardLayout>;
->>>>>>> Stashed changes
+    </div>  
 };
 
 export default Customers;
