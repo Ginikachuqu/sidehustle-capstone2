@@ -13,41 +13,42 @@ const Customers = () => {
 
   console.log(customers);
 
-  return;
-  <DashboardLayout>
-    <div className="customers-details">
-      <div className="customers-table">
-        <div className="customers-table-main">
-          <table id="details">
-            <thead>
-              <tr>
-                <th> NAME </th>
-                <th> EMAIL </th>
-                <th> PHONE NUMBER </th>
-                <th> COUNTRY </th>
-              </tr>
-            </thead>
+  return (
+    <DashboardLayout>
+      <div className="customers-details">
+        <div className="customers-table">
+          <div className="customers-table-main">
+            <table id="details">
+              <thead>
+                <tr>
+                  <th> NAME </th>
+                  <th> EMAIL </th>
+                  <th> PHONE NUMBER </th>
+                  <th> COUNTRY </th>
+                </tr>
+              </thead>
 
-            <tbody>
-              {customers
-                ? customers.map((customer, idx) => (
-                    <tr key={idx}>
-                      <td>
-                        <img src={customer.image} alt="customer_image" />
-                        {customer.name}
-                      </td>
-                      <td> {customer.email} </td>
-                      <td> {customer.phone} </td>
-                      <td> {customer.country} </td>
-                    </tr>
-                  ))
-                : null}
-            </tbody>
-          </table>
+              <tbody>
+                {customers
+                  ? customers.map((customer, idx) => (
+                      <tr key={idx}>
+                        <td>
+                          <img src={customer.image} alt="customer_image" />
+                          {customer.name}
+                        </td>
+                        <td> {customer.email} </td>
+                        <td> {customer.phone} </td>
+                        <td> {customer.country} </td>
+                      </tr>
+                    ))
+                  : null}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-    </div>
-  </DashboardLayout>;
+    </DashboardLayout>
+  );
 };
 
 export default Customers;
