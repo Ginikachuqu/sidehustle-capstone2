@@ -12,8 +12,9 @@ const DashBoard = () => {
       {
         label: '$1,800',
         data: monthlyData.map((data) => data.moneyMade),
-        backgroundColor: '#888888',
+        backgroundColor: '#000',
       },
+      { linePercentage: 0.5 },
     ],
   });
 
