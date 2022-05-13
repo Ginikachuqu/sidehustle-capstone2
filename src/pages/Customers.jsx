@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import DashboardLayout from '../Layout/DashboardLayout';
+// import DashboardLayout from '../Layout/DashboardLayout';
 import '../assets/css/customer.css';
 
 const Customers = () => {
