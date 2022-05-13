@@ -18,8 +18,10 @@ const DashBoard = () => {
     ],
   });
 
+  const [show, setShow] = useState(true);
+
   return (
-    <DashboardLayout>
+    <DashboardLayout show={show}>
       <Box width={'100%'} border={'1px solid black'}>
         <VStack>
           <Flex>

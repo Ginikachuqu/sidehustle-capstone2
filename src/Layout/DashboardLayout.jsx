@@ -4,7 +4,7 @@ import SideBar from '../components/SideBar/SideBar';
 import TopBar from '../components/TopBar/TopBar';
 import RightSideBar from '../components/RightSideBar/RightSideBar';
 
-const DashboardLayout = ({ children }) => {
+const DashboardLayout = ({ children, show }) => {
   return (
     <Box maxW={'100%'} minH={'100vh'} display="flex">
       <Box
@@ -27,7 +27,7 @@ const DashboardLayout = ({ children }) => {
 
         <HStack align="flex-start" justify="flex-start" gap={3} maxW={'100%'}>
           {children}
-          <RightSideBar />
+          {show ? <RightSideBar /> : ''}
         </HStack>
       </Box>
     </Box>
