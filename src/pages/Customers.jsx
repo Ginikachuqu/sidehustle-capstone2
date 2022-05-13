@@ -4,6 +4,8 @@ import DashboardLayout from '../Layout/DashboardLayout';
 import '../assets/css/customer.css';
 
 const Customers = () => {
+  // if you want to see right sidebar change false to true
+  const [show, setShow] = useState(false);
   const [customers, setCustomers] = useState([]);
 
   const url = 'https://fakerapi.it/api/v1/companies?_quantity=10';
@@ -11,10 +13,8 @@ const Customers = () => {
     axios.get(url).then((response) => setCustomers(response.data.data));
   }, []);
 
-  console.log(customers);
-
   return (
-    <DashboardLayout>
+    <DashboardLayout show={show}>
       <div className="customers-details">
         <div className="customers-table">
           <div className="customers-table-main">

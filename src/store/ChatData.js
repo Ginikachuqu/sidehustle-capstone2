@@ -8,17 +8,17 @@ const monthlyData = [
   {
     id: 2,
     month: 'Feb',
-    moneyMade: 75,
+    moneyMade: 50,
   },
   {
     id: 3,
     month: 'Mar',
-    moneyMade: 50,
+    moneyMade: 30,
   },
   {
     id: 4,
     month: 'Apr',
-    moneyMade: 61,
+    moneyMade: 81,
   },
   {
     id: 5,
