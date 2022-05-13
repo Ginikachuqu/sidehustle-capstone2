@@ -2,7 +2,9 @@ import React from 'react';
 import DashboardLayout from '../Layout/DashboardLayout';
 
 const Products = () => {
-  return;
+  return 
+    <div> Products </div>
+  ;
 };
 
 export default Products;
