@@ -2,7 +2,7 @@ import React from 'react';
 import Chart from 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
 
-Chart.defaults.borderColor = '#000';
+Chart.defaults.borderColor = 'gray';
 Chart.defaults.color = '#000';
 Chart.defaults.elements.line.stepped = false;
 Chart.defaults.elements.line.fill = false;

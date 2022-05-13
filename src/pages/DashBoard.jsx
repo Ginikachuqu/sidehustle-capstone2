@@ -63,7 +63,13 @@ const DashBoard = () => {
           </Box>
         </VStack>
 
-        <Stack width={'100%'} px={4} border={'1px solid black'} mt={'50px'}>
+        <Stack
+          width={'100%'}
+          px={4}
+          border={'1px solid black'}
+          mt={'50px'}
+          gap={3}
+        >
           <Flex width={'100%'}>
             <Text>Last Transaction</Text>
             <Spacer />
@@ -73,80 +79,107 @@ const DashBoard = () => {
             </HStack>
           </Flex>
 
-          <Flex width={'100%'}>
-            <HStack>
-              <Center>
-                <GrAmazon />
+          <Flex
+            width={'100%'}
+            border={'1px solid black'}
+            align={'center'}
+            justify={'space-between'}
+          >
+            <HStack gap={4} border={'1px solid black'}>
+              <Center p={4} bgColor={'#F9F9F9'} borderRadius={'lg'}>
+                <GrAmazon size={'35px'} />
               </Center>
-              <VStack>
+
+              <VStack align={'flex-start'}>
                 <Text>Amazon</Text>
-                <Text>4 min</Text>
+                <Text>4 min ago</Text>
+              </VStack>
+            </HStack>
+
+            <HStack border={'1px solid black'}>
+              <Circle p={1} bgColor={'red'} />
+              <Text>Shopping</Text>
+            </HStack>
+
+            <Heading fontSize={'md'}>$1.430</Heading>
+          </Flex>
+
+          <Flex
+            w={'100%'}
+            width={'100%'}
+            border={'1px solid black'}
+            align={'center'}
+            justify={'space-between'}
+          >
+            <HStack gap={4}>
+              <Center p={4} bgColor={'#F9F9F9'} borderRadius={'lg'}>
+                <AiFillYoutube size={'35px'} cursor={'pointer'} />
+              </Center>
+
+              <VStack align={'flex-start'}>
+                <Text>YouTube </Text>
+                <Text>10 min ago</Text>
               </VStack>
             </HStack>
 
             <HStack>
-              <Circle />
-              <Text>Shopping</Text>
+              <Circle p={1} bgColor={'red'} />
+              <Text>Subscription</Text>
             </HStack>
 
-            <Heading>$1.430</Heading>
+            <Heading fontSize={'md'}>$330</Heading>
           </Flex>
 
-          <Flex>
-            <HStack>
-              <Center>
-                <AiFillYoutube />
+          <Flex
+            w={'100%'}
+            width={'100%'}
+            border={'1px solid black'}
+            align={'center'}
+            justify={'space-between'}
+          >
+            <HStack gap={4}>
+              <Center p={4} bgColor={'#F9F9F9'} borderRadius={'lg'}>
+                <FiGithub size={'35px'} cursor={'pointer'} />
               </Center>
-              <VStack>
-                <Text>Amazon</Text>
-                <Text>4 min</Text>
+
+              <VStack align={'flex-start'}>
+                <Text>Github</Text>
+                <Text>4 June 2021</Text>
               </VStack>
             </HStack>
 
             <HStack>
-              <Circle />
-              <Text>Shopping</Text>
+              <Circle p={1} bgColor={'red'} />
+              <Text>Development</Text>
             </HStack>
 
-            <Heading>$1.430</Heading>
+            <Heading fontSize={'md'}>$2.430</Heading>
           </Flex>
 
-          <Flex>
-            <HStack>
-              <Center>
-                <FiGithub />
-              </Center>
-              <VStack>
-                <Text>Amazon</Text>
-                <Text>4 min</Text>
-              </VStack>
-            </HStack>
-
-            <HStack>
-              <Circle />
-              <Text>Shopping</Text>
-            </HStack>
-
-            <Heading>$1.430</Heading>
-          </Flex>
-
-          <Flex>
-            <HStack>
-              <Center>
+          <Flex
+            w={'100%'}
+            width={'100%'}
+            border={'1px solid black'}
+            align={'center'}
+            justify={'space-between'}
+          >
+            <HStack gap={4}>
+              <Center p={4} bgColor={'#F9F9F9'} borderRadius={'lg'}>
                 <BsApple />
               </Center>
-              <VStack>
-                <Text>Amazon</Text>
-                <Text>4 min</Text>
+
+              <VStack align={'flex-start'}>
+                <Text>Apple </Text>
+                <Text>2 Jul 2021</Text>
               </VStack>
             </HStack>
 
             <HStack>
-              <Circle />
+              <Circle p={1} bgColor={'red'} />
               <Text>Shopping</Text>
             </HStack>
 
-            <Heading>$1.430</Heading>
+            <Heading fontSize={'md'}>$65</Heading>
           </Flex>
         </Stack>
       </Box>

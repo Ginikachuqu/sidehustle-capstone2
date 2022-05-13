@@ -33,6 +33,7 @@ import sidebarLinks from '../../store/sideBarLinks';
 import swal from 'sweetalert';
 
 const TopBar = () => {
+  // Hooks
   const { pathname } = useLocation();
   const name = pathname.slice(1);
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -70,6 +71,7 @@ const TopBar = () => {
     });
   };
 
+  // Renders
   const renderLinks = sidebarLinks.map(({ path, icon, title }, index) => {
     return (
       <LinkBox
