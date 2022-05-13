@@ -11,17 +11,23 @@ const DashboardLayout = ({ children, show }) => {
         display={['none', 'none', 'none', 'none', 'flex']}
         flexDirection={'column'}
         w={'20%'}
+        position={'fixed'}
+        top={'0'}
+        left={'0px'}
+        bottom={'0'}
       >
         <SideBar />
       </Box>
       <Box
-        w={['100%', '100%', '100%', '100%', '80%']}
+        w={['100%', '100%', '100%', '100%', '100%']}
         minH={'100vh'}
         display={'flex'}
         px={'20px'}
         pt={9}
         gap={10}
+        ml={['0%', '0%', '0%', '0%', '20%']}
         flexDirection={'column'}
+        position={'static'}
       >
         <TopBar />
 

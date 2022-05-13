@@ -36,7 +36,7 @@ const TopBar = () => {
         width={'14%'}
         align={'center'}
         justify={'space-between'}
-        display={['none', 'none', 'none', 'flex', 'flex']}
+        display={['none', 'none', 'flex', 'flex', 'flex']}
       >
         <BsSearch size={'20px'} cursor={'pointer'} />
 

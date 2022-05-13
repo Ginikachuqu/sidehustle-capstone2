@@ -9,6 +9,7 @@ const Customers = () => {
   const [customers, setCustomers] = useState([]);
 
   const url = 'https://fakerapi.it/api/v1/companies?_quantity=10';
+
   useEffect(() => {
     axios.get(url).then((response) => setCustomers(response.data.data));
   }, []);

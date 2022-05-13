@@ -53,7 +53,9 @@ const SideBar = () => {
       buttons: true,
     }).then((action) => {
       if (action) {
-        swal('Bye!', {
+        swal({
+          title: 'Bye!',
+          text: 'See you soon',
           icon: 'success',
           timer: 2000,
           buttons: false,
@@ -62,7 +64,9 @@ const SideBar = () => {
           navigate('/');
         }, 2500);
       } else {
-        swal('You stayed!', {
+        swal({
+          title: 'You stayed!',
+          text: 'Enjoy the best services',
           icon: 'success',
           buttons: false,
           timer: 2000,

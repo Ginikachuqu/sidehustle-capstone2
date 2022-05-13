@@ -13,7 +13,7 @@ const monthlyData = [
   {
     id: 3,
     month: 'Mar',
-    moneyMade: 30,
+    moneyMade: 60,
   },
   {
     id: 4,

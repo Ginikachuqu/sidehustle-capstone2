@@ -1,5 +1,21 @@
-import { Box, Flex, HStack, Text, VStack } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import {
+  Box,
+  Center,
+  Circle,
+  Flex,
+  Heading,
+  HStack,
+  Spacer,
+  Stack,
+  Text,
+  VStack,
+} from '@chakra-ui/react';
+import { BsArrowUpRight } from 'react-icons/bs';
+import { FiGithub } from 'react-icons/fi';
+import { BsApple } from 'react-icons/bs';
+import { GrAmazon } from 'react-icons/gr';
+import { AiFillYoutube } from 'react-icons/ai';
 import LineChart from '../components/LineChart/LineChart';
 import DashboardLayout from '../Layout/DashboardLayout';
 import monthlyData from '../store/ChatData';
@@ -23,12 +39,21 @@ const DashBoard = () => {
   return (
     <DashboardLayout show={show}>
       <Box width={'100%'} border={'1px solid black'}>
-        <VStack>
-          <Flex>
-            <Text>Statistics</Text>
+        <VStack px={4} width={'100%'}>
+          <Flex
+            fontSize={'lg'}
+            fontWeight={600}
+            width={'100%'}
+            mb={1}
+            align="flex-end"
+          >
+            <Text fontSize={'30px'} fontWeight={700}>
+              Statistics
+            </Text>
+            <Spacer />
             <HStack>
               <Text>Income</Text>
-              <Text>Expenses</Text>
+              <Text color={'#8888'}>Expenses</Text>
             </HStack>
           </Flex>
 
@@ -37,6 +62,93 @@ const DashBoard = () => {
             <LineChart monthData={monthData} />
           </Box>
         </VStack>
+
+        <Stack width={'100%'} px={4} border={'1px solid black'} mt={'50px'}>
+          <Flex width={'100%'}>
+            <Text>Last Transaction</Text>
+            <Spacer />
+            <HStack>
+              <Text>See more</Text>
+              <BsArrowUpRight />
+            </HStack>
+          </Flex>
+
+          <Flex width={'100%'}>
+            <HStack>
+              <Center>
+                <GrAmazon />
+              </Center>
+              <VStack>
+                <Text>Amazon</Text>
+                <Text>4 min</Text>
+              </VStack>
+            </HStack>
+
+            <HStack>
+              <Circle />
+              <Text>Shopping</Text>
+            </HStack>
+
+            <Heading>$1.430</Heading>
+          </Flex>
+
+          <Flex>
+            <HStack>
+              <Center>
+                <AiFillYoutube />
+              </Center>
+              <VStack>
+                <Text>Amazon</Text>
+                <Text>4 min</Text>
+              </VStack>
+            </HStack>
+
+            <HStack>
+              <Circle />
+              <Text>Shopping</Text>
+            </HStack>
+
+            <Heading>$1.430</Heading>
+          </Flex>
+
+          <Flex>
+            <HStack>
+              <Center>
+                <FiGithub />
+              </Center>
+              <VStack>
+                <Text>Amazon</Text>
+                <Text>4 min</Text>
+              </VStack>
+            </HStack>
+
+            <HStack>
+              <Circle />
+              <Text>Shopping</Text>
+            </HStack>
+
+            <Heading>$1.430</Heading>
+          </Flex>
+
+          <Flex>
+            <HStack>
+              <Center>
+                <BsApple />
+              </Center>
+              <VStack>
+                <Text>Amazon</Text>
+                <Text>4 min</Text>
+              </VStack>
+            </HStack>
+
+            <HStack>
+              <Circle />
+              <Text>Shopping</Text>
+            </HStack>
+
+            <Heading>$1.430</Heading>
+          </Flex>
+        </Stack>
       </Box>
     </DashboardLayout>
   );
