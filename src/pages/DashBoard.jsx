@@ -38,7 +38,7 @@ const DashBoard = () => {
 
   return (
     <DashboardLayout show={show}>
-      <Box width={'100%'}>
+      <Box width={'100%'} pr={4}>
         <VStack px={4} width={'100%'}>
           <Flex
             fontSize={'lg'}

@@ -103,6 +103,7 @@ const TopBar = () => {
         lineHeight={'40px'}
         textTransform={'capitalize'}
         cursor={'pointer'}
+        pl={4}
       >
         {name}
       </Text>
