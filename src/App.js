@@ -3,7 +3,7 @@ import Customers from './pages/Customers';
 import DashBoard from './pages/DashBoard';
 import Login from './pages/Login';
 import Products from './pages/Products';
-import TeamMembers from './pages/TeamMembers';
+import TeamMembers from './pages/TeamMembers/TeamMembers';
 
 function App() {
   return (
