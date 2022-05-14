@@ -38,7 +38,7 @@ const DashBoard = () => {
 
   return (
     <DashboardLayout show={show}>
-      <Box width={'100%'} border={'1px solid black'}>
+      <Box width={'100%'}>
         <VStack px={4} width={'100%'}>
           <Flex
             fontSize={'lg'}
@@ -52,8 +52,10 @@ const DashBoard = () => {
             </Text>
             <Spacer />
             <HStack>
-              <Text>Income</Text>
-              <Text color={'#8888'}>Expenses</Text>
+              <Text cursor={'pointer'}>Income</Text>
+              <Text color={'#8888'} cursor={'pointer'}>
+                Expenses
+              </Text>
             </HStack>
           </Flex>
 
@@ -63,29 +65,37 @@ const DashBoard = () => {
           </Box>
         </VStack>
 
-        <Stack
-          width={'100%'}
-          px={4}
-          border={'1px solid black'}
-          mt={'50px'}
-          gap={3}
-        >
+        <Stack width={'100%'} px={4} mt={'50px'} gap={5}>
           <Flex width={'100%'}>
-            <Text>Last Transaction</Text>
+            <Text fontSize={['md', 'md', 'xl']} fontWeight={'bold'}>
+              Last Transactions
+            </Text>
             <Spacer />
             <HStack>
-              <Text>See more</Text>
-              <BsArrowUpRight />
+              <Text
+                fontSize={['md', 'md', 'xl']}
+                fontWeight={300}
+                cursor={'pointer'}
+              >
+                See more
+              </Text>
+              <BsArrowUpRight size={'25px'} cursor={'pointer'} />
             </HStack>
           </Flex>
 
           <Flex
             width={'100%'}
-            border={'1px solid black'}
-            align={'center'}
-            justify={'space-between'}
+            align={['center', 'center']}
+            justify={['center', 'space-between', 'space-between']}
+            flexDirection={['column', 'column', 'row', 'row', 'row']}
+            gap={[5, 5, 3]}
+            pb={5}
           >
-            <HStack gap={4} border={'1px solid black'}>
+            <HStack
+              gap={4}
+              w={['100%', '100%', '33%']}
+              justify={['center', 'center', 'flex-start']}
+            >
               <Center p={4} bgColor={'#F9F9F9'} borderRadius={'lg'}>
                 <GrAmazon size={'35px'} />
               </Center>
@@ -96,22 +106,38 @@ const DashBoard = () => {
               </VStack>
             </HStack>
 
-            <HStack border={'1px solid black'}>
+            <HStack
+              minW={['100%', '100%', '15%']}
+              justify={['center', 'center', 'flex-start']}
+              align={'center'}
+            >
               <Circle p={1} bgColor={'red'} />
               <Text>Shopping</Text>
             </HStack>
 
-            <Heading fontSize={'md'}>$1.430</Heading>
+            <Heading
+              fontSize={'md'}
+              textAlign={['center', 'center', 'right']}
+              w={'30%'}
+            >
+              $1.430
+            </Heading>
           </Flex>
 
           <Flex
             w={'100%'}
             width={'100%'}
-            border={'1px solid black'}
             align={'center'}
             justify={'space-between'}
+            gap={[5, 5, 3]}
+            pb={5}
+            flexDirection={['column', 'column', 'row', 'row', 'row']}
           >
-            <HStack gap={4}>
+            <HStack
+              gap={4}
+              w={['100%', '100%', '33%']}
+              justify={['center', 'center', 'flex-start']}
+            >
               <Center p={4} bgColor={'#F9F9F9'} borderRadius={'lg'}>
                 <AiFillYoutube size={'35px'} cursor={'pointer'} />
               </Center>
@@ -122,22 +148,38 @@ const DashBoard = () => {
               </VStack>
             </HStack>
 
-            <HStack>
+            <HStack
+              minW={['100%', '100%', '15%']}
+              justify={['center', 'center', 'flex-start']}
+              align={'center'}
+            >
               <Circle p={1} bgColor={'red'} />
               <Text>Subscription</Text>
             </HStack>
 
-            <Heading fontSize={'md'}>$330</Heading>
+            <Heading
+              w={'30%'}
+              textAlign={['center', 'center', 'right']}
+              fontSize={'md'}
+            >
+              $330
+            </Heading>
           </Flex>
 
           <Flex
             w={'100%'}
             width={'100%'}
-            border={'1px solid black'}
             align={'center'}
+            gap={[5, 5, 3]}
+            pb={5}
             justify={'space-between'}
+            flexDirection={['column', 'column', 'row', 'row', 'row']}
           >
-            <HStack gap={4}>
+            <HStack
+              gap={4}
+              minW={['100%', '100%', '33%']}
+              justify={['center', 'center', 'flex-start']}
+            >
               <Center p={4} bgColor={'#F9F9F9'} borderRadius={'lg'}>
                 <FiGithub size={'35px'} cursor={'pointer'} />
               </Center>
@@ -148,24 +190,40 @@ const DashBoard = () => {
               </VStack>
             </HStack>
 
-            <HStack>
+            <HStack
+              minW={['100%', '100%', '15%']}
+              justify={['center', 'center', 'flex-start']}
+              align={'center'}
+            >
               <Circle p={1} bgColor={'red'} />
               <Text>Development</Text>
             </HStack>
 
-            <Heading fontSize={'md'}>$2.430</Heading>
+            <Heading
+              w={'30%'}
+              textAlign={['center', 'center', 'right']}
+              fontSize={'md'}
+            >
+              $2.430
+            </Heading>
           </Flex>
 
           <Flex
             w={'100%'}
             width={'100%'}
-            border={'1px solid black'}
             align={'center'}
+            gap={[5, 5, 3]}
+            pb={5}
             justify={'space-between'}
+            flexDirection={['column', 'column', 'row', 'row', 'row']}
           >
-            <HStack gap={4}>
+            <HStack
+              gap={4}
+              minW={['100%', '100%', '33%']}
+              justify={['center', 'center', 'flex-start']}
+            >
               <Center p={4} bgColor={'#F9F9F9'} borderRadius={'lg'}>
-                <BsApple />
+                <BsApple size={'35px'} cursor={'pointer'} />
               </Center>
 
               <VStack align={'flex-start'}>
@@ -174,12 +232,23 @@ const DashBoard = () => {
               </VStack>
             </HStack>
 
-            <HStack>
+            <HStack
+              w={'15%'}
+              minW={['100%', '100%', '15%']}
+              justify={['center', 'center', 'flex-start']}
+              align={'center'}
+            >
               <Circle p={1} bgColor={'red'} />
               <Text>Shopping</Text>
             </HStack>
 
-            <Heading fontSize={'md'}>$65</Heading>
+            <Heading
+              w={'30%'}
+              textAlign={['center', 'center', 'right']}
+              fontSize={'md'}
+            >
+              $65
+            </Heading>
           </Flex>
         </Stack>
       </Box>
