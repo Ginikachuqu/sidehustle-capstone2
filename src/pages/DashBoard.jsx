@@ -65,7 +65,7 @@ const DashBoard = () => {
           </Box>
         </VStack>
 
-        <Stack width={'100%'} px={4} mt={'50px'} gap={5}>
+        <Stack width={'100%'} px={4} mt={'80px'} gap={5}>
           <Flex width={'100%'}>
             <Text fontSize={['md', 'md', 'xl']} fontWeight={'bold'}>
               Last Transactions
