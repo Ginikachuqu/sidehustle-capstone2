@@ -41,7 +41,7 @@ const Products = () => {
 
           {items &&
             items.map((item) => (
-              <Link to={`${item.id}`} key={item.id}>
+              <Link to={`${item.itemname}`} key={item.id}>
                 <button className="content">
                   <div className="left">
                     <div className="con">

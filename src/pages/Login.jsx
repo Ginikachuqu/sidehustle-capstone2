@@ -120,7 +120,7 @@ const Login = () => {
           </FormControl>
 
           <FormControl>
-            <FormLabel htmlFor="email">E-mail Address</FormLabel>
+            <FormLabel htmlFor="email">Email </FormLabel>
             <Input
               id="email"
               variant="filled"

@@ -31,7 +31,7 @@ import swal from 'sweetalert';
 const TopBar = () => {
   // Hooks
   const { pathname } = useLocation();
-  const name = pathname.slice(1);
+  const name = pathname.slice(1, 13);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const navigate = useNavigate();
 

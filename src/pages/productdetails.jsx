@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { items } from '../store/ProductItems';
+import DashboardLayout from '../Layout/DashboardLayout';
 
 const Productdetails = () => {
   // Hooks
@@ -10,7 +11,7 @@ const Productdetails = () => {
   const [singleProduct, setSingleProduct] = useState({});
 
   useEffect(() => {
-    const oneProduct = items.find((item) => item.id === parseInt(id));
+    const oneProduct = items.find((item) => item.itemname === id);
     setSingleProduct(oneProduct);
   }, [id]);
 
@@ -18,20 +19,22 @@ const Productdetails = () => {
   const { itemname, itemimage, itemprice } = singleProduct;
 
   return (
-    <div className="detailscover">
-      <div className="detailscont">
-        <div>
-          <img src={itemimage} alt="" className="logoimg" />
-        </div>
-        <br />
-
-        <div className="description">
-          <p>{itemname} </p>
+    <DashboardLayout>
+      <div className="detailscover">
+        <div className="detailscont">
+          <div>
+            <img src={itemimage} alt="" className="logoimg" />
+          </div>
           <br />
-          <p>{itemprice} </p>
+
+          <div className="description">
+            <p>{itemname} </p>
+            <br />
+            <p>{itemprice} </p>
+          </div>
         </div>
       </div>
-    </div>
+    </DashboardLayout>
   );
 };
 
