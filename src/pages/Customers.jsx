@@ -4,11 +4,12 @@ import DashboardLayout from '../Layout/DashboardLayout';
 import '../assets/css/customer.css';
 
 const Customers = () => {
-  // if you want to see right sidebar change false to true
+  // Default Values
+  const url = 'https://fakerapi.it/api/v1/companies?_quantity=10';
+
+  // Hooks
   const [show] = useState(false);
   const [customers, setCustomers] = useState([]);
-
-  const url = 'https://fakerapi.it/api/v1/companies?_quantity=10';
 
   useEffect(() => {
     axios.get(url).then((response) => setCustomers(response.data.data));

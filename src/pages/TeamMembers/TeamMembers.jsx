@@ -9,11 +9,12 @@ import {
 import DashboardLayout from '../../Layout/DashboardLayout';
 
 const TeamMembers = () => {
-  // if you want to see right sidebar change false to true
+  // Default Values
+  const url = 'https://fakerapi.it/api/v1/persons?_quantity=10';
+
+  // Hooks
   const [show] = useState(false);
   const [team, setTeam] = useState([]);
-
-  const url = 'https://fakerapi.it/api/v1/persons?_quantity=10';
 
   useEffect(() => {
     axios.get(url).then((response) => setTeam(response.data.data));

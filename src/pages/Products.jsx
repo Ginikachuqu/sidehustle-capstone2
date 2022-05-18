@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { items } from '../store/ProductItems';
 
 const Products = () => {
-  // if you want to see right sidebar change false to true
+  // Hooks
   const [show] = useState(false);
 
   return (
