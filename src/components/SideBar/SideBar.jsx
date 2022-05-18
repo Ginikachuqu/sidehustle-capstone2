@@ -14,11 +14,20 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import ProfilePic from '../../assets/media/imgs/profile.avif';
 import sidebarLinks from '../../store/sideBarLinks';
 import swal from 'sweetalert';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const SideBar = () => {
   //   Hooks
   const { pathname } = useLocation();
+  const [userName, setUserName] = useState('');
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const userObj = sessionStorage.getItem('schema');
+    const user = userObj && JSON.parse(userObj);
+    setUserName(user);
+  }, []);
 
   //   Renders
   const renderLinks = sidebarLinks.map(({ path, icon, title }, index) => {
@@ -61,6 +70,7 @@ const SideBar = () => {
           buttons: false,
         });
         setTimeout(() => {
+          sessionStorage.removeItem('schema');
           navigate('/');
         }, 2500);
       } else {
@@ -104,7 +114,7 @@ const SideBar = () => {
             loading={'lazy'}
           />
           <Text fontSize={'lg'} fontWeight={900}>
-            James
+            {userName.name}
           </Text>
         </Flex>
 

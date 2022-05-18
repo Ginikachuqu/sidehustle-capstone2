@@ -5,7 +5,7 @@ import '../assets/css/customer.css';
 
 const Customers = () => {
   // if you want to see right sidebar change false to true
-  const [show, setShow] = useState(false);
+  const [show] = useState(false);
   const [customers, setCustomers] = useState([]);
 
   const url = 'https://fakerapi.it/api/v1/companies?_quantity=10';
@@ -33,13 +33,11 @@ const Customers = () => {
                 {customers
                   ? customers.map((customer, idx) => (
                       <tr key={idx}>
-                        <td className='customer__info'>
+                        <td className="customer__info">
                           <div className="customer__avatar">
                             <img src={customer.image} alt="customer_image" />
                           </div>
-                          <div className="customer__name">
-                            {customer.name}
-                          </div>
+                          <div className="customer__name">{customer.name}</div>
                         </td>
                         <td> {customer.email} </td>
                         <td> {customer.phone} </td>

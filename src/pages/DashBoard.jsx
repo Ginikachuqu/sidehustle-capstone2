@@ -22,7 +22,7 @@ import monthlyData from '../store/ChatData';
 
 const DashBoard = () => {
   // Hooks
-  const [monthData, setMonthData] = useState({
+  const [monthData] = useState({
     labels: monthlyData.map((data) => data.month),
     datasets: [
       {
@@ -34,7 +34,7 @@ const DashBoard = () => {
     ],
   });
 
-  const [show, setShow] = useState(true);
+  const [show] = useState(true);
 
   return (
     <DashboardLayout show={show}>
