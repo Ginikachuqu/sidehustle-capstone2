@@ -26,7 +26,8 @@ const SideBar = () => {
   useEffect(() => {
     const userObj = sessionStorage.getItem('schema');
     const user = userObj && JSON.parse(userObj);
-    setUserName(user);
+    const firstName = user.name.split(' ')[1];
+    setUserName(firstName);
   }, []);
 
   //   Renders
@@ -114,7 +115,7 @@ const SideBar = () => {
             loading={'lazy'}
           />
           <Text fontSize={'lg'} fontWeight={900}>
-            {userName.name}
+            {userName}
           </Text>
         </Flex>
 

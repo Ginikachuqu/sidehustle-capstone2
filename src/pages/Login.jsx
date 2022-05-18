@@ -35,7 +35,7 @@ const Login = () => {
   const schema = yup
     .object()
     .shape({
-      name: yup.string().max(8).required(REQUIRED_VALIDATION('Name')),
+      name: yup.string().max(30).required(REQUIRED_VALIDATION('Name')),
       email: yup.string().email().required(REQUIRED_VALIDATION('Email')),
       password: yup
         .string()
@@ -105,7 +105,7 @@ const Login = () => {
           gap={2}
         >
           <FormControl my={5}>
-            <FormLabel htmlFor="name">Name</FormLabel>
+            <FormLabel htmlFor="name"> Full Name</FormLabel>
             <Input
               id="name"
               variant="filled"
