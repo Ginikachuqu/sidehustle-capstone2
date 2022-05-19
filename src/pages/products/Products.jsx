@@ -7,7 +7,7 @@ const Products = () => {
   // Hooks
   const [show] = useState(false);
 
-  const url = "https://fakerapi.it/api/v1/products?_quantity=1";
+  const url = "https://fakerapi.it/api/v1/products?_quantity=10";
 
   const [product, setProduct] = useState([]);
 
