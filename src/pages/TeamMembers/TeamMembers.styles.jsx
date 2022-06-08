@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
     width: 100%;
+    overflow-x: scroll;
 `
 
 export const Content = styled.div`

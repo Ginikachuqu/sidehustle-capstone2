@@ -40,4 +40,5 @@
 
 .customers-details{
     width: 100%;
+    overflow-x: scroll;
 }
