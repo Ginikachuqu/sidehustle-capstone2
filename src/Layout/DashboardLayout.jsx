@@ -5,6 +5,7 @@ import TopBar from '../components/TopBar/TopBar';
 import RightSideBar from '../components/RightSideBar/RightSideBar';
 
 const DashboardLayout = ({ children, show }) => {
+  console.log('Hello');
   return (
     <Box maxW={'100%'} minH={'100vh'} display="flex">
       <Box
