@@ -1,3 +1,4 @@
+import swal from 'sweetalert';
 import React, { useState } from 'react';
 import {
   Box,
@@ -17,7 +18,6 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { REQUIRED_VALIDATION } from '../components/utils/utils';
 import { useNavigate } from 'react-router-dom';
-import swal from 'sweetalert';
 
 const Login = () => {
   // Default Values
@@ -51,7 +51,7 @@ const Login = () => {
     reset,
     formState: { errors },
   } = useForm({
-    mode: 'onTouched',
+    mode: 'onSubmit',
     reValidateMode: 'onSubmit',
     resolver: yupResolver(schema),
     defaultValues: initialValue,
